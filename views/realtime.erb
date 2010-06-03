@@ -1,0 +1,12 @@
+
+<h2>Realtime info for <%= @station.name %></h2>
+
+<% @station.departures.each do |departure| %>
+  <h3><%= departure.destination.name %></h3>
+
+  <ul>
+    <% departure.estimates.each do |estimate| %>
+      <li><%= estimate.minutes %> (Platform <%= estimate.platform %>)</li>
+    <% end %>
+  </ul>
+<% end %>
