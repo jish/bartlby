@@ -43,6 +43,7 @@ module Bart
       ID_TO_NAME[abbr]
     end
 
+    # fetch
     def load_departures
       params = {
         :cmd => 'etd',
