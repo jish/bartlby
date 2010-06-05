@@ -3,6 +3,8 @@ require 'bart/station'
 
 class Bartlby < Sinatra::Base
 
+  set :public, 'public'
+
   get '/' do
     @stations = Bart::Station::LIST
     erb :index

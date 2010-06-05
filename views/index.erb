@@ -1,6 +1,7 @@
 
 <h2>Realtime info</h2>
-<ul>
+
+<ul class="menu">
   <% @stations.each do |station| %>
     <li><a href="/realtime/<%= station[:id] %>"><%= station[:name] %></a></li>
   <% end %>

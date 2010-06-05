@@ -1,0 +1,39 @@
+
+body {
+  font-family: arial, helvetica, sans-serif;
+}
+
+h2 {
+  background: #2a7ea1;
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: .05em;
+  padding: 10px;
+  text-align: center;
+}
+h3 {
+  margin: 5px;
+}
+
+ul.menu li {
+  border-bottom: 1px solid #333;
+}
+ul.menu li a {
+  background: #fff url( '/images/arrow-right.png' ) no-repeat top right;
+  background-position: 98% 50%;
+  display: block;
+  padding: 5px 0 5px 5px;
+  text-decoration: none;
+}
+
+
+ul.info {
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+  margin: 5px;
+}
+ul.info li {
+  border-bottom: 1px solid #333;
+  padding: 5px;
+}
