@@ -14,5 +14,13 @@ module Bart
       @length    = document.css('length').text.to_i
     end
 
+    def seconds
+      @minutes * 60
+    end
+
+    def time
+      Time.now + seconds
+    end
+
   end
 end

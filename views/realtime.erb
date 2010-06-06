@@ -6,7 +6,11 @@
 
   <ul class="info">
     <% departure.estimates.each do |estimate| %>
-      <li><%= estimate.minutes %> (Platform <%= estimate.platform %>)</li>
+      <li>
+        <%= estimate.time.strftime("%I:%M%P") %>
+        (<%= estimate.minutes %> mins)
+        (Platform <%= estimate.platform %>)
+      </li>
     <% end %>
   </ul>
 <% end %>
