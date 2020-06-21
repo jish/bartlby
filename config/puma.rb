@@ -6,5 +6,6 @@ max_threads = Integer(ENV['MAX_THREADS'] || 16)
 threads(min_threads, max_threads)
 preload_app!
 
+rackup(DefaultRackup)
 port(app_port)
 environment(rack_env)
