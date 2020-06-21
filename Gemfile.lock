@@ -3,8 +3,11 @@ GEM
   specs:
     mini_portile2 (2.3.0)
     mustermann (1.0.2)
+    nio4r (2.5.2)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
+    puma (4.3.5)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-protection (2.0.1)
       rack
@@ -20,8 +23,12 @@ PLATFORMS
 
 DEPENDENCIES
   nokogiri
+  puma (~> 4.3)
   rack
   sinatra
+
+RUBY VERSION
+   ruby 2.7.1p83
 
 BUNDLED WITH
    2.1.4
